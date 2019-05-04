@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-04-30T11:01:45.043Z</updated>
+  <updated>2019-05-04T09:26:44.025Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title></title>
-    <link href="http://yoursite.com/2019/04/30/luogu1969/"/>
-    <id>http://yoursite.com/2019/04/30/luogu1969/</id>
-    <published>2019-04-30T11:01:45.043Z</published>
-    <updated>2019-04-30T11:01:45.043Z</updated>
+    <link href="http://yoursite.com/2019/05/04/luogu1443/"/>
+    <id>http://yoursite.com/2019/05/04/luogu1443/</id>
+    <published>2019-05-04T09:26:44.025Z</published>
+    <updated>2019-05-04T09:26:44.025Z</updated>
     
     <summary type="html">
     
@@ -32,10 +32,10 @@
   
   <entry>
     <title></title>
-    <link href="http://yoursite.com/2019/04/30/luogu2615/"/>
-    <id>http://yoursite.com/2019/04/30/luogu2615/</id>
-    <published>2019-04-30T11:01:45.043Z</published>
-    <updated>2019-04-30T11:01:45.043Z</updated>
+    <link href="http://yoursite.com/2019/05/04/luogu1464/"/>
+    <id>http://yoursite.com/2019/05/04/luogu1464/</id>
+    <published>2019-05-04T09:26:44.025Z</published>
+    <updated>2019-05-04T09:26:44.025Z</updated>
     
     <summary type="html">
     
@@ -46,10 +46,10 @@
   
   <entry>
     <title></title>
-    <link href="http://yoursite.com/2019/04/30/luogu4431/"/>
-    <id>http://yoursite.com/2019/04/30/luogu4431/</id>
-    <published>2019-04-30T11:01:45.043Z</published>
-    <updated>2019-04-30T11:01:45.043Z</updated>
+    <link href="http://yoursite.com/2019/05/04/luogu1765/"/>
+    <id>http://yoursite.com/2019/05/04/luogu1765/</id>
+    <published>2019-05-04T09:26:44.025Z</published>
+    <updated>2019-05-04T09:26:44.025Z</updated>
     
     <summary type="html">
     
@@ -60,10 +60,10 @@
   
   <entry>
     <title></title>
-    <link href="http://yoursite.com/2019/04/30/luogu1162/"/>
-    <id>http://yoursite.com/2019/04/30/luogu1162/</id>
-    <published>2019-04-30T11:01:45.039Z</published>
-    <updated>2019-04-30T11:01:45.039Z</updated>
+    <link href="http://yoursite.com/2019/05/04/luogu1958/"/>
+    <id>http://yoursite.com/2019/05/04/luogu1958/</id>
+    <published>2019-05-04T09:26:44.025Z</published>
+    <updated>2019-05-04T09:26:44.025Z</updated>
     
     <summary type="html">
     
@@ -74,10 +74,10 @@
   
   <entry>
     <title></title>
-    <link href="http://yoursite.com/2019/04/30/luogu1443/"/>
-    <id>http://yoursite.com/2019/04/30/luogu1443/</id>
-    <published>2019-04-30T11:01:45.039Z</published>
-    <updated>2019-04-30T11:01:45.039Z</updated>
+    <link href="http://yoursite.com/2019/05/04/luogu1969/"/>
+    <id>http://yoursite.com/2019/05/04/luogu1969/</id>
+    <published>2019-05-04T09:26:44.025Z</published>
+    <updated>2019-05-04T09:26:44.025Z</updated>
     
     <summary type="html">
     
@@ -88,10 +88,10 @@
   
   <entry>
     <title></title>
-    <link href="http://yoursite.com/2019/04/30/luogu1464/"/>
-    <id>http://yoursite.com/2019/04/30/luogu1464/</id>
-    <published>2019-04-30T11:01:45.039Z</published>
-    <updated>2019-04-30T11:01:45.039Z</updated>
+    <link href="http://yoursite.com/2019/05/04/luogu2615/"/>
+    <id>http://yoursite.com/2019/05/04/luogu2615/</id>
+    <published>2019-05-04T09:26:44.025Z</published>
+    <updated>2019-05-04T09:26:44.025Z</updated>
     
     <summary type="html">
     
@@ -102,10 +102,10 @@
   
   <entry>
     <title></title>
-    <link href="http://yoursite.com/2019/04/30/luogu1605/"/>
-    <id>http://yoursite.com/2019/04/30/luogu1605/</id>
-    <published>2019-04-30T11:01:45.039Z</published>
-    <updated>2019-04-30T11:01:45.039Z</updated>
+    <link href="http://yoursite.com/2019/05/04/luogu4431/"/>
+    <id>http://yoursite.com/2019/05/04/luogu4431/</id>
+    <published>2019-05-04T09:26:44.025Z</published>
+    <updated>2019-05-04T09:26:44.025Z</updated>
     
     <summary type="html">
     
@@ -115,73 +115,73 @@
   </entry>
   
   <entry>
-    <title></title>
-    <link href="http://yoursite.com/2019/04/30/luogu1765/"/>
-    <id>http://yoursite.com/2019/04/30/luogu1765/</id>
-    <published>2019-04-30T11:01:45.039Z</published>
-    <updated>2019-04-30T11:01:45.039Z</updated>
+    <title>洛谷 P1162 填涂颜色</title>
+    <link href="http://yoursite.com/2019/05/04/luogu1162/"/>
+    <id>http://yoursite.com/2019/05/04/luogu1162/</id>
+    <published>2019-05-04T04:00:00.000Z</published>
+    <updated>2019-05-04T09:26:44.025Z</updated>
     
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://yoursite.com/2019/04/30/luogu1958/"/>
-    <id>http://yoursite.com/2019/04/30/luogu1958/</id>
-    <published>2019-04-30T11:01:45.039Z</published>
-    <updated>2019-04-30T11:01:45.039Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2019/04/30/hello-world/"/>
-    <id>http://yoursite.com/2019/04/30/hello-world/</id>
-    <published>2019-04-30T11:01:45.039Z</published>
-    <updated>2019-04-30T11:01:45.039Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="题目链接"><a href="#题目链接" class="headerlink" title="题目链接"></a>题目链接</h2><p><a href="https://www.luogu.org/problemnew/show/P1162" target="_blank" rel="noopener">https://www.luogu.org/problemnew/show/P1162</a></p><h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>这道题有点意思，个人感觉比跳马和迷宫那两题都要难一点。</p><p>个人感觉 DFS 好写点，于是我就用了 DFS。</p><p>我的思路是这样的：</p><p>首先，<script type="math/tex">2</script> 不可能出现在方阵边缘。因为闭合圈周围都要有数字 <script type="math/tex">1</script>。</p><p>所以我们先遍历方阵的四条边，用 DFS 先把闭合圈外面所有的 <script type="math/tex">0</script> 改成 <script type="math/tex">2</script>。</p><p>这样方阵就会有三种数字：<script type="math/tex">0</script>、<script type="math/tex">1</script>、<script type="math/tex">2</script>。</p><p>其中，<script type="math/tex">0</script> 表示在闭合圈内，<script type="math/tex">1</script> 表示是闭合圈的边缘，<script type="math/tex">2</script> 表示在闭合圈外。</p><p>比如下面这个样例：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">0 0 0 0 0 0</span><br><span class="line">0 0 1 1 1 1</span><br><span class="line">0 1 1 0 0 1</span><br><span class="line">1 1 0 0 0 1</span><br><span class="line">1 0 0 0 0 1</span><br><span class="line">1 1 1 1 1 1</span><br></pre></td></tr></table></figure><p>经过如上处理后，就会变成这样：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">2 2 2 2 2 2</span><br><span class="line">2 2 1 1 1 1</span><br><span class="line">2 1 1 0 0 1</span><br><span class="line">1 1 0 0 0 1</span><br><span class="line">1 0 0 0 0 1</span><br><span class="line">1 1 1 1 1 1</span><br></pre></td></tr></table></figure><p>所以我们只要这样输出：</p><ul><li>如果是 <script type="math/tex">2</script>，就输出 <script type="math/tex">0</script></li><li>如果是 <script type="math/tex">1</script>，就输出 <script type="math/tex">1</script></li><li>如果是 <script type="math/tex">0</script>，就输出 <script type="math/tex">2</script></li></ul><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">35</span>][<span class="number">35</span>];</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> dx[] &#123;<span class="number">-1</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>&#125;,</span><br><span class="line">          dy[] &#123;<span class="number">0</span>, <span class="number">0</span>, <span class="number">-1</span>, <span class="number">1</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; n;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= n; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">cin</span> &gt;&gt; a[i][j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= n; j++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (a[<span class="number">1</span>][j] == <span class="number">0</span>) &#123; dfs(<span class="number">1</span>, j); &#125;</span><br><span class="line">        <span class="keyword">if</span> (a[n][j] == <span class="number">0</span>) &#123; dfs(n, j); &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (a[i][<span class="number">1</span>] == <span class="number">0</span>) &#123; dfs(i, <span class="number">1</span>); &#125;</span><br><span class="line">        <span class="keyword">if</span> (a[i][n] == <span class="number">0</span>) &#123; dfs(i, n); &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= n; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span> (a[i][j] == <span class="number">2</span>) <span class="built_in">cout</span> &lt;&lt; <span class="number">0</span> &lt;&lt; <span class="string">' '</span>;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (a[i][j] == <span class="number">0</span>) <span class="built_in">cout</span> &lt;&lt; <span class="number">2</span> &lt;&lt; <span class="string">' '</span>;</span><br><span class="line">            <span class="keyword">else</span> <span class="built_in">cout</span> &lt;&lt; <span class="number">1</span> &lt;&lt; <span class="string">' '</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (x &lt; <span class="number">1</span> || x &gt; n || y &lt; <span class="number">1</span> || y &gt; n || a[x][y] != <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        a[x][y] = <span class="number">2</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">4</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">int</span> tx = x+dx[i];</span><br><span class="line">        <span class="keyword">int</span> ty = y+dy[i];</span><br><span class="line"></span><br><span class="line">        dfs(tx, ty);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+        &lt;h2 id=&quot;题目链接&quot;&gt;&lt;a href=&quot;#题目链接&quot; class=&quot;headerlink&quot; title=&quot;题目链接&quot;&gt;&lt;/a&gt;题目链接&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://www.luogu.org/problemnew/show/P1162&quot; target=&quot;
       
     
     </summary>
     
     
+      <category term="DFS" scheme="http://yoursite.com/tags/DFS/"/>
+    
+      <category term="连通块" scheme="http://yoursite.com/tags/%E8%BF%9E%E9%80%9A%E5%9D%97/"/>
+    
   </entry>
   
   <entry>
-    <title></title>
-    <link href="http://yoursite.com/2019/04/30/luogu1644/"/>
-    <id>http://yoursite.com/2019/04/30/luogu1644/</id>
-    <published>2019-04-30T11:01:45.039Z</published>
-    <updated>2019-04-30T11:01:45.039Z</updated>
+    <title>洛谷 P1605 迷宫</title>
+    <link href="http://yoursite.com/2019/05/04/luogu1605/"/>
+    <id>http://yoursite.com/2019/05/04/luogu1605/</id>
+    <published>2019-05-04T03:00:00.000Z</published>
+    <updated>2019-05-04T09:26:44.025Z</updated>
     
-    <content type="html"><![CDATA[<p>{\rtf1}</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="题目链接"><a href="#题目链接" class="headerlink" title="题目链接"></a>题目链接</h2><p><a href="https://www.luogu.org/problemnew/show/P1605" target="_blank" rel="noopener">https://www.luogu.org/problemnew/show/P1605</a></p><h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>就是一道 DFS，不过坑有点多。</p><p>一道 <code>普及-</code> 的题目提交了 3 次才 A 掉，还是太弱了……</p><p>坑点总结：</p><ul><li>起点不是 <code>1, 1</code>，而是数据中的 <code>sx, sy</code>。</li><li>记得要把<strong>起点设为已经访问</strong>！！！<br>我就因为这个一直没 AC，看了看题解才意识到这个坑。。。</li></ul><p>其它的就没什么了，DFS 打熟练了都会写。</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span></span>;</span><br><span class="line"><span class="keyword">int</span> ans, n, m, t;</span><br><span class="line"><span class="keyword">int</span> sx, sy, fx, fy;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">10</span>][<span class="number">10</span>];</span><br><span class="line"><span class="keyword">bool</span> book[<span class="number">10</span>][<span class="number">10</span>];</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> dx[<span class="number">4</span>] &#123;<span class="number">-1</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>&#125;,</span><br><span class="line">          dy[<span class="number">4</span>] &#123;<span class="number">0</span>, <span class="number">0</span>, <span class="number">-1</span>, <span class="number">1</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; n &gt;&gt; m &gt;&gt; t;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; sx &gt;&gt; sy &gt;&gt; fx &gt;&gt; fy;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; t; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">int</span> x, y;</span><br><span class="line">        <span class="built_in">cin</span> &gt;&gt; x &gt;&gt; y;</span><br><span class="line"></span><br><span class="line">        a[x][y] = <span class="number">-1</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    book[sx][sy] = <span class="number">1</span>;    </span><br><span class="line"></span><br><span class="line">    dfs(sx, sy);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; ans &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (x == fx &amp;&amp; y == fy)</span><br><span class="line">    &#123;</span><br><span class="line">        ans++;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">4</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">int</span> tx = x+dx[i], ty = y+dy[i];</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (tx &lt; <span class="number">1</span> || tx &gt; n || ty &lt; <span class="number">1</span> || ty &gt; m) <span class="keyword">continue</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (book[tx][ty] == <span class="number">0</span> &amp;&amp; a[tx][ty] != <span class="number">-1</span> &amp;&amp; tx &lt;= n &amp;&amp; tx &gt;= <span class="number">1</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            book[tx][ty] = <span class="number">1</span>;</span><br><span class="line">            dfs(tx, ty);</span><br><span class="line">            book[tx][ty] = <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;{\rtf1}&lt;/p&gt;
-
+        &lt;h2 id=&quot;题目链接&quot;&gt;&lt;a href=&quot;#题目链接&quot; class=&quot;headerlink&quot; title=&quot;题目链接&quot;&gt;&lt;/a&gt;题目链接&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://www.luogu.org/problemnew/show/P1605&quot; target=&quot;
       
     
     </summary>
     
+    
+      <category term="DFS" scheme="http://yoursite.com/tags/DFS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>洛谷 P1644 跳马问题</title>
+    <link href="http://yoursite.com/2019/05/04/luogu1644/"/>
+    <id>http://yoursite.com/2019/05/04/luogu1644/</id>
+    <published>2019-05-04T02:00:00.000Z</published>
+    <updated>2019-05-04T09:26:44.025Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="题目链接"><a href="#题目链接" class="headerlink" title="题目链接"></a>题目链接</h2><p><a href="https://www.luogu.org/problemnew/show/P1644" target="_blank" rel="noopener">https://www.luogu.org/problemnew/show/P1644</a></p><h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>还是不太难的 <code>DFS</code>。</p><p>虽说马可以有 8 种跳法，但是这里题目 <strong>规定只能往右跳</strong>，也就只有 4 个跳法了。</p><p><img src="/img/luogu1644/P1644-1.jpg" alt="P1644-1"></p><p>下面代码中的 <code>dx</code> 和 <code>dy</code> 数组就是马的走法。</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> ans, n, m;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> dx[] &#123;</span><br><span class="line">    <span class="number">2</span>, <span class="number">1</span>, <span class="number">-1</span>, <span class="number">-2</span></span><br><span class="line">&#125;,        dy[] &#123;</span><br><span class="line">    <span class="number">1</span>, <span class="number">2</span>, <span class="number">2</span>, <span class="number">1</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; n &gt;&gt; m;</span><br><span class="line"></span><br><span class="line">    dfs(<span class="number">0</span>, <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; ans &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (x == n &amp;&amp; y == m)</span><br><span class="line">    &#123;</span><br><span class="line">        ans++;</span><br><span class="line">        <span class="keyword">return</span> ;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (x &lt; <span class="number">0</span> || y &lt; <span class="number">0</span> || x &gt; n || y &gt; m) <span class="keyword">return</span>; <span class="comment">// 判断是否越界</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">4</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        dfs(x + dx[i], y + dy[i]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;题目链接&quot;&gt;&lt;a href=&quot;#题目链接&quot; class=&quot;headerlink&quot; title=&quot;题目链接&quot;&gt;&lt;/a&gt;题目链接&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://www.luogu.org/problemnew/show/P1644&quot; target=&quot;
+      
+    
+    </summary>
+    
+    
+      <category term="DFS" scheme="http://yoursite.com/tags/DFS/"/>
     
   </entry>
   
