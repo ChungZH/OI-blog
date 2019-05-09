@@ -1,0 +1,21 @@
+menu:
+    Blog: /
+    Archive: /archives/
+    ChungZH's blog: https://chungzh.cn
+    GitHub: https://github.com/ChungZH
+    #Rss: /atom.xml
+
+#favicon: /favicon.png
+logo: /favicon.png
+
+# Comment
+# e.g disqus: seansun
+disqus:
+duoshuo:
+
+# Analytics
+# google-analytics:
+# ga: UA-xxxxxxxx-x
+
+# Copyright Infomation
+startyear: 2019
