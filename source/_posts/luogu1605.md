@@ -1,6 +1,8 @@
 ---
 title: 洛谷 P1605 迷宫
 date: 2019-5-4 11:00:00
+categories: 
+- 题解
 tags:
 - DFS
 ---
@@ -8,6 +10,8 @@ tags:
 ## 题目链接
 
 https://www.luogu.org/problemnew/show/P1605
+
+<!-- More -->
 
 ## 题解
 

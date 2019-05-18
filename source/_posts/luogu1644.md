@@ -1,6 +1,8 @@
 ---
 title: 洛谷 P1644 跳马问题
 date: 2019-5-4 10:00:00
+categories: 
+- 题解
 tags:
 - DFS
 ---
@@ -8,6 +10,8 @@ tags:
 ## 题目链接
 
 https://www.luogu.org/problemnew/show/P1644
+
+<!-- More -->
 
 ## 题解
 

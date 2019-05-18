@@ -8,7 +8,7 @@ subtitle: 路漫漫其修远兮，吾将上下而求索。
 description: ChungZH 的 OI 题解博客
 keywords:
 author: ChungZH
-language: zh-cn
+language: zh-CN
 timezone:
 
 # URL
@@ -73,7 +73,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: t-apollo
+theme: t-icarus
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

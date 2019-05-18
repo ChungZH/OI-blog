@@ -1,0 +1,31 @@
+<% if (theme.plugins.mathjax) { %>
+    <!-- Edit here -->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+    </script>
+    <%- js('https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML') %>
+<% } %>
+<% if (!head && plugin !== false) { %>
+<%- _js(cdn('mathjax', '2.7.5', 'unpacked/MathJax.js?config=TeX-MML-AM_CHTML'), true) %>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    MathJax.Hub.Config({
+        'HTML-CSS': {
+            matchFontHeight: false
+        },
+        SVG: {
+            matchFontHeight: false
+        },
+        CommonHTML: {
+            matchFontHeight: false
+        },
+        tex2jax: {
+            inlineMath: [
+                ['$','$'],
+                ['\\(','\\)']
+            ]
+        }
+    });
+});
+</script>
+<% } %>
