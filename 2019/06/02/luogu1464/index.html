@@ -2,24 +2,23 @@
 <html lang="zh">
 <head><meta name="generator" content="Hexo 3.8.0">
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-<title>洛谷 P1644 跳马问题 - ChungZH&#39;s OI Blog</title>
+<title>洛谷 P1464 Function - ChungZH&#39;s OI Blog</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta name="description" content="题目链接https://www.luogu.org/problemnew/show/P1644">
-<meta name="keywords" content="DFS">
+    <meta name="description" content="题目链接题解">
 <meta property="og:type" content="article">
-<meta property="og:title" content="洛谷 P1644 跳马问题">
-<meta property="og:url" content="http://yoursite.com/2019/05/04/luogu1644/index.html">
+<meta property="og:title" content="洛谷 P1464 Function">
+<meta property="og:url" content="http://yoursite.com/2019/06/02/luogu1464/index.html">
 <meta property="og:site_name" content="ChungZH&#39;s OI Blog">
-<meta property="og:description" content="题目链接https://www.luogu.org/problemnew/show/P1644">
+<meta property="og:description" content="题目链接题解">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
 <meta property="og:updated_time" content="2019-06-02T04:12:25.964Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="洛谷 P1644 跳马问题">
-<meta name="twitter:description" content="题目链接https://www.luogu.org/problemnew/show/P1644">
+<meta name="twitter:title" content="洛谷 P1464 Function">
+<meta name="twitter:description" content="题目链接题解">
 <meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
 
 
@@ -152,17 +151,13 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-05-04T02:00:00.000Z">2019-05-04</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/题解/">题解</a>
-                </div>
+                <time class="level-item has-text-grey" datetime="2019-06-02T04:12:25.964Z">2019-06-02</time>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    1 分钟 读完 (大约 146 个字)
+                    几秒 读完 (大约 6 个字)
                 </span>
                 
                 
@@ -171,27 +166,11 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                洛谷 P1644 跳马问题
+                洛谷 P1464 Function
             
         </h1>
         <div class="content">
-            <h2 id="题目链接"><a href="#题目链接" class="headerlink" title="题目链接"></a>题目链接</h2><p><a href="https://www.luogu.org/problemnew/show/P1644" target="_blank" rel="noopener">https://www.luogu.org/problemnew/show/P1644</a></p>
-<a id="more"></a>
-
-<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>还是不太难的 <code>DFS</code>。</p>
-<p>虽说马可以有 8 种跳法，但是这里题目 <strong>规定只能往右跳</strong>，也就只有 4 个跳法了。</p>
-<p><img src="/img/luogu1644/P1644-1.jpg" alt="P1644-1"></p>
-<p>下面代码中的 <code>dx</code> 和 <code>dy</code> 数组就是马的走法。</p>
-<figure class="highlight cpp hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">int</span> ans, n, m;</span><br><span class="line"><span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> dx[] &#123;</span><br><span class="line">    <span class="hljs-number">2</span>, <span class="hljs-number">1</span>, <span class="hljs-number">-1</span>, <span class="hljs-number">-2</span></span><br><span class="line">&#125;,        dy[] &#123;</span><br><span class="line">    <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">dfs</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-built_in">cin</span> &gt;&gt; n &gt;&gt; m;</span><br><span class="line"></span><br><span class="line">    dfs(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>);</span><br><span class="line"></span><br><span class="line">    <span class="hljs-built_in">cout</span> &lt;&lt; ans &lt;&lt; <span class="hljs-built_in">endl</span>;</span><br><span class="line">    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">dfs</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-keyword">if</span> (x == n &amp;&amp; y == m)</span><br><span class="line">    &#123;</span><br><span class="line">        ans++;</span><br><span class="line">        <span class="hljs-keyword">return</span> ;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">if</span> (x &lt; <span class="hljs-number">0</span> || y &lt; <span class="hljs-number">0</span> || x &gt; n || y &gt; m) <span class="hljs-keyword">return</span>; <span class="hljs-comment">// 判断是否越界</span></span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">4</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        dfs(x + dx[i], y + dy[i]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-        </div>
-        
-        <div class="level is-size-7 is-uppercase">
-            <div class="level-start">
-                <div class="level-item">
-                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/DFS/">DFS</a>
-                </div>
-            </div>
+            <h2 id="题目链接"><a href="#题目链接" class="headerlink" title="题目链接"></a>题目链接</h2><h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2>
         </div>
         
         
@@ -207,12 +186,19 @@
     <div class="level post-navigation is-flex-wrap is-mobile">
         
         <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/05/04/luogu1605/">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/06/02/luogu1443/">
                 <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">洛谷 P1605 迷宫</span>
+                <span class="level-item">洛谷 P1443 马的遍历</span>
             </a>
         </div>
         
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/06/02/luogu1765/">
+                <span class="level-item">洛谷 P1765 手机_NOI导刊2010普及（10）</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
         
     </div>
 </div>
