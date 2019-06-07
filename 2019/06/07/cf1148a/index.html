@@ -2,23 +2,24 @@
 <html lang="zh">
 <head><meta name="generator" content="Hexo 3.8.0">
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-<title>洛谷 P1464 Function - ChungZH&#39;s OI Blog</title>
+<title>CF1148A Another One Bites The Dust - ChungZH&#39;s OI Blog</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta name="description" content="题目链接题解">
+    <meta name="description" content="题目链接https://www.luogu.org/problemnew/show/CF1148A">
+<meta name="keywords" content="模拟">
 <meta property="og:type" content="article">
-<meta property="og:title" content="洛谷 P1464 Function">
-<meta property="og:url" content="http://yoursite.com/2019/06/02/luogu1464/index.html">
+<meta property="og:title" content="CF1148A Another One Bites The Dust">
+<meta property="og:url" content="http://yoursite.com/2019/06/07/cf1148a/index.html">
 <meta property="og:site_name" content="ChungZH&#39;s OI Blog">
-<meta property="og:description" content="题目链接题解">
+<meta property="og:description" content="题目链接https://www.luogu.org/problemnew/show/CF1148A">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
-<meta property="og:updated_time" content="2019-06-02T04:32:10.594Z">
+<meta property="og:updated_time" content="2019-06-07T08:04:28.497Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="洛谷 P1464 Function">
-<meta name="twitter:description" content="题目链接题解">
+<meta name="twitter:title" content="CF1148A Another One Bites The Dust">
+<meta name="twitter:description" content="题目链接https://www.luogu.org/problemnew/show/CF1148A">
 <meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
 
 
@@ -151,13 +152,17 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-06-02T04:32:10.594Z">2019-06-02</time>
+                <time class="level-item has-text-grey" datetime="2019-06-07T06:54:00.000Z">2019-06-07</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/题解/">题解</a>
+                </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    几秒 读完 (大约 6 个字)
+                    3 分钟 读完 (大约 454 个字)
                 </span>
                 
                 
@@ -166,11 +171,37 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                洛谷 P1464 Function
+                CF1148A Another One Bites The Dust
             
         </h1>
         <div class="content">
-            <h2 id="题目链接"><a href="#题目链接" class="headerlink" title="题目链接"></a>题目链接</h2><h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2>
+            <h2 id="题目链接"><a href="#题目链接" class="headerlink" title="题目链接"></a>题目链接</h2><p><a href="https://www.luogu.org/problemnew/show/CF1148A" target="_blank" rel="noopener">https://www.luogu.org/problemnew/show/CF1148A</a></p>
+<a id="more"></a>
+
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>这道题其实很简单，意思就是拼一个要求 <strong>相邻字符不一样</strong> 的字符串，而且要越长越好。</p>
+<p>$a$ 就是 <code>a</code> 字符的数量，$b$ 就是 <code>b</code> 字符的数量，$c$ 就是 <code>ab</code> 字符串的数量。</p>
+<p>由于 <code>ab</code> 是合规的字符串，先把 $c$ 个 <code>ab</code> 全部拼起来。所以答案至少也会有 $c*2$。</p>
+<p>然后我们继续把剩下单独的 <code>a</code> 和 <code>b</code> 拼起来，也就是一个 <code>a</code> 一个 <code>b</code> 地拼。先用 <code>temp</code> 加上 <code>min(a, b)</code>，然后答案再加上 $temp*2$。因为最多只可能拼 <code>min(a, b)</code> 对 <code>ab</code>，剩下的只有落单的一个 <code>a</code> 或者 <code>b</code>。</p>
+<p>到这里就完了吗？其实没有。</p>
+<p>我们拿一个样例 <code>2 1 2</code> 来试一下：</p>
+<ol>
+<li>首先把 $c$ 个 <code>ab</code> 全部拼起来，$ans += 2*2$</li>
+<li>继续把剩下单独的 <code>a</code> 和 <code>b</code> 拼起来，$ans += min(a, b) * 2$ 也就是 $ans += 1*2$</li>
+</ol>
+<p>到这里，$ans$ 就是 $6$ 了。但是正确的答案是 $8$，为什么呢？</p>
+<p>我们来看看，先把 $2$ 个 <code>ab</code> 拼起来，这个字符串就是 <code>abab</code> 了。</p>
+<p>然后再加 $1$ 个 <code>a</code>、$1$ 个 <code>b</code> 拼起来，字符串又加了 <code>ab</code> 也就是 <code>ababab</code> 了。</p>
+<p>到了这里，$a$ 变量其实还剩下 1 个，$b$ 变量倒是没了。在 <code>ababab</code> 后面其实是还可以加一个 <code>a</code> 的，我们只需要加一个特判就可以解决这个问题。</p>
+<figure class="highlight cpp hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// [CF1148A Another One Bites The Dust] https://www.luogu.org/problemnew/show/CF1148A</span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    ios::sync_with_stdio(<span class="hljs-literal">false</span>); <span class="hljs-comment">// 加快速度</span></span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">long</span> <span class="hljs-keyword">long</span> a, b, c, ans = <span class="hljs-number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-built_in">cin</span> &gt;&gt; a &gt;&gt; b &gt;&gt; c;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">long</span> <span class="hljs-keyword">long</span> temp = min(a, b);</span><br><span class="line"></span><br><span class="line">    ans += c*<span class="hljs-number">2</span>;</span><br><span class="line">    ans += temp * <span class="hljs-number">2</span>;</span><br><span class="line">    </span><br><span class="line">    a -= temp;</span><br><span class="line">    b -= temp;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">if</span> (a || b) <span class="hljs-comment">// 特判</span></span><br><span class="line">        ans++;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-built_in">cout</span> &lt;&lt; ans &lt;&lt; <span class="hljs-built_in">endl</span>;</span><br><span class="line">    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/模拟/">模拟</a>
+                </div>
+            </div>
         </div>
         
         
@@ -186,16 +217,16 @@
     <div class="level post-navigation is-flex-wrap is-mobile">
         
         <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/06/02/luogu1443/">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/06/07/luogu1765/">
                 <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">洛谷 P1443 马的遍历</span>
+                <span class="level-item">洛谷 P1765 手机_NOI导刊2010普及（10）</span>
             </a>
         </div>
         
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2019/06/02/luogu1765/">
-                <span class="level-item">洛谷 P1765 手机_NOI导刊2010普及（10）</span>
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/06/02/NHOI-2019/">
+                <span class="level-item">NHOI 2019 游记</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
@@ -254,7 +285,7 @@
                         文章
                     </p>
                     <p class="title has-text-weight-normal">
-                        17
+                        18
                     </p>
                 </div>
             </div>
@@ -361,7 +392,7 @@
                 <span class="level-item">题解</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">12</span>
+                <span class="level-item tag">13</span>
             </span>
         </a></li>
             </ul>
@@ -394,8 +425,8 @@
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-06-02T04:32:10.594Z">2019-06-02</time></div>
-                    <a href="/2019/06/02/luogu1443/" class="has-link-black-ter is-size-6">洛谷 P1443 马的遍历</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-06-07T08:04:28.497Z">2019-06-07</time></div>
+                    <a href="/2019/06/07/luogu1443/" class="has-link-black-ter is-size-6">洛谷 P1443 马的遍历</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -407,8 +438,8 @@
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-06-02T04:32:10.594Z">2019-06-02</time></div>
-                    <a href="/2019/06/02/luogu1464/" class="has-link-black-ter is-size-6">洛谷 P1464 Function</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-06-07T08:04:28.497Z">2019-06-07</time></div>
+                    <a href="/2019/06/07/luogu1464/" class="has-link-black-ter is-size-6">洛谷 P1464 Function</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -420,10 +451,23 @@
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-06-02T04:32:10.594Z">2019-06-02</time></div>
-                    <a href="/2019/06/02/luogu1765/" class="has-link-black-ter is-size-6">洛谷 P1765 手机_NOI导刊2010普及（10）</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-06-07T08:04:28.497Z">2019-06-07</time></div>
+                    <a href="/2019/06/07/luogu1765/" class="has-link-black-ter is-size-6">洛谷 P1765 手机_NOI导刊2010普及（10）</a>
                     <p class="is-size-7 is-uppercase">
                         
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-06-07T06:54:00.000Z">2019-06-07</time></div>
+                    <a href="/2019/06/07/cf1148a/" class="has-link-black-ter is-size-6">CF1148A Another One Bites The Dust</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/题解/">题解</a>
                     </p>
                 </div>
             </div>
@@ -437,19 +481,6 @@
                     <a href="/2019/06/02/NHOI-2019/" class="has-link-black-ter is-size-6">NHOI 2019 游记</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/游记/">游记</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-06-01T06:05:56.000Z">2019-06-01</time></div>
-                    <a href="/2019/06/01/luogu2799/" class="has-link-black-ter is-size-6">洛谷 P2799 国王的魔镜</a>
-                    <p class="is-size-7 is-uppercase">
-                        
                     </p>
                 </div>
             </div>
@@ -473,7 +504,7 @@
                     <span class="level-item">六月 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">10</span>
+                    <span class="level-item tag">11</span>
                 </span>
             </a>
         </li>
@@ -568,7 +599,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/模拟/">
                         <span class="tag">模拟</span>
-                        <span class="tag is-grey">6</span>
+                        <span class="tag is-grey">7</span>
                     </a>
                 </div>
                 
@@ -634,8 +665,8 @@
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-06-02T04:32:10.594Z">2019-06-02</time></div>
-                    <a href="/2019/06/02/luogu1443/" class="has-link-black-ter is-size-6">洛谷 P1443 马的遍历</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-06-07T08:04:28.497Z">2019-06-07</time></div>
+                    <a href="/2019/06/07/luogu1443/" class="has-link-black-ter is-size-6">洛谷 P1443 马的遍历</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -647,8 +678,8 @@
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-06-02T04:32:10.594Z">2019-06-02</time></div>
-                    <a href="/2019/06/02/luogu1464/" class="has-link-black-ter is-size-6">洛谷 P1464 Function</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-06-07T08:04:28.497Z">2019-06-07</time></div>
+                    <a href="/2019/06/07/luogu1464/" class="has-link-black-ter is-size-6">洛谷 P1464 Function</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -660,10 +691,23 @@
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-06-02T04:32:10.594Z">2019-06-02</time></div>
-                    <a href="/2019/06/02/luogu1765/" class="has-link-black-ter is-size-6">洛谷 P1765 手机_NOI导刊2010普及（10）</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-06-07T08:04:28.497Z">2019-06-07</time></div>
+                    <a href="/2019/06/07/luogu1765/" class="has-link-black-ter is-size-6">洛谷 P1765 手机_NOI导刊2010普及（10）</a>
                     <p class="is-size-7 is-uppercase">
                         
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-06-07T06:54:00.000Z">2019-06-07</time></div>
+                    <a href="/2019/06/07/cf1148a/" class="has-link-black-ter is-size-6">CF1148A Another One Bites The Dust</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/题解/">题解</a>
                     </p>
                 </div>
             </div>
@@ -677,19 +721,6 @@
                     <a href="/2019/06/02/NHOI-2019/" class="has-link-black-ter is-size-6">NHOI 2019 游记</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/游记/">游记</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-06-01T06:05:56.000Z">2019-06-01</time></div>
-                    <a href="/2019/06/01/luogu2799/" class="has-link-black-ter is-size-6">洛谷 P2799 国王的魔镜</a>
-                    <p class="is-size-7 is-uppercase">
-                        
                     </p>
                 </div>
             </div>
@@ -713,7 +744,7 @@
                     <span class="level-item">六月 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">10</span>
+                    <span class="level-item tag">11</span>
                 </span>
             </a>
         </li>
@@ -808,7 +839,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/模拟/">
                         <span class="tag">模拟</span>
-                        <span class="tag is-grey">6</span>
+                        <span class="tag is-grey">7</span>
                     </a>
                 </div>
                 
