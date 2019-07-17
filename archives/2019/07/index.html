@@ -2,24 +2,22 @@
 <html lang="zh">
 <head><meta name="generator" content="Hexo 3.8.0">
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-<title>洛谷 P2799 国王的魔镜 - ChungZH&#39;s OI Blog</title>
+<title>归档: 2019/7 - ChungZH&#39;s OI Blog</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta name="description" content="题目链接https://www.luogu.org/problemnew/show/P2799">
-<meta name="keywords" content="模拟,字符串">
-<meta property="og:type" content="article">
-<meta property="og:title" content="洛谷 P2799 国王的魔镜">
-<meta property="og:url" content="http://yoursite.com/2019/06/01/luogu2799/index.html">
+    <meta name="description" content="ChungZH 的 OI 题解博客">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ChungZH&#39;s OI Blog">
+<meta property="og:url" content="http://yoursite.com/archives/2019/07/index.html">
 <meta property="og:site_name" content="ChungZH&#39;s OI Blog">
-<meta property="og:description" content="题目链接https://www.luogu.org/problemnew/show/P2799">
+<meta property="og:description" content="ChungZH 的 OI 题解博客">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
-<meta property="og:updated_time" content="2019-07-17T10:26:38.896Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="洛谷 P2799 国王的魔镜">
-<meta name="twitter:description" content="题目链接https://www.luogu.org/problemnew/show/P2799">
+<meta name="twitter:title" content="ChungZH&#39;s OI Blog">
+<meta name="twitter:description" content="ChungZH 的 OI 题解博客">
 <meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
 
 
@@ -146,87 +144,84 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-06-01T06:05:56.000Z">2019-06-01</time>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    1 分钟 读完 (大约 136 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                洛谷 P2799 国王的魔镜
-            
-        </h1>
-        <div class="content">
-            <h2 id="题目链接"><a href="#题目链接" class="headerlink" title="题目链接"></a>题目链接</h2><p><a href="https://www.luogu.org/problemnew/show/P2799" target="_blank" rel="noopener">https://www.luogu.org/problemnew/show/P2799</a></p>
-<a id="more"></a>
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
 
-<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>利用 <strong>增加的那部分是反的</strong> 这个规律，每次把字符串分成两半，分别记作 <code>left</code> 和 <code>right</code>。然后反转其中的一个，再对比一下是不是一样的，直到不一样了为止。</p>
-<figure class="highlight cpp hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-built_in">string</span> s;</span><br><span class="line">    <span class="hljs-built_in">cin</span> &gt;&gt; s;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">int</span> ans = s.length();</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">while</span> (s.length() &gt; <span class="hljs-number">1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="hljs-built_in">string</span> left  = s.substr(<span class="hljs-number">0</span>, s.length()/<span class="hljs-number">2</span>);</span><br><span class="line">        <span class="hljs-built_in">string</span> right = s.substr(s.length()/<span class="hljs-number">2</span>, s.length()<span class="hljs-number">-1</span>);</span><br><span class="line">        reverse(left.begin(), left.end());</span><br><span class="line"></span><br><span class="line">        <span class="hljs-comment">// cout &lt;&lt; "left=" &lt;&lt; left &lt;&lt; "  right=" &lt;&lt; right &lt;&lt; endl;</span></span><br><span class="line"></span><br><span class="line">        <span class="hljs-keyword">if</span> (left != right)</span><br><span class="line">            <span class="hljs-keyword">break</span>;</span><br><span class="line"></span><br><span class="line">        s = left; </span><br><span class="line">        ans /= <span class="hljs-number">2</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-built_in">cout</span> &lt;&lt; ans &lt;&lt; <span class="hljs-built_in">endl</span>;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-        </div>
-        
-        <div class="level is-size-7 is-uppercase">
-            <div class="level-start">
-                <div class="level-item">
-                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/字符串/">字符串</a>, <a class="has-link-grey -link" href="/tags/模拟/">模拟</a>
-                </div>
-            </div>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-<div class="card card-transparent">
-    <div class="level post-navigation is-flex-wrap is-mobile">
-        
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/06/02/NHOI-2019/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">NHOI 2019 游记</span>
-            </a>
-        </div>
-        
-        
-        <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2019/06/01/luogu1958/">
-                <span class="level-item">洛谷 P1958 上学路线_NOI导刊2009普及（6）</span>
-                <i class="level-item fas fa-chevron-right"></i>
-            </a>
-        </div>
-        
-    </div>
-</div>
-
-
-
-<div class="card">
+<div class="card widget">
     <div class="card-content">
-        <h3 class="title is-5 has-text-weight-normal">评论</h3>
+        <h3 class="tag is-link">
+        七月 2019
+        </h3>
+        <div class="timeline">
         
+            <article class="media">
+                
+                <div class="media-content">
+                    <div class="content">
+                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-07-17T10:26:38.896Z">2019-07-17</time>
+                        <a href="/2019/07/17/luogu1443/" class="has-link-black-ter is-size-6">洛谷 P1443 马的遍历</a>
+                        <div class="level article-meta is-mobile">
+                            <div class="level-left">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        
+            <article class="media">
+                
+                <div class="media-content">
+                    <div class="content">
+                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-07-17T10:26:38.896Z">2019-07-17</time>
+                        <a href="/2019/07/17/luogu1464/" class="has-link-black-ter is-size-6">洛谷 P1464 Function</a>
+                        <div class="level article-meta is-mobile">
+                            <div class="level-left">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        
+            <article class="media">
+                
+                <div class="media-content">
+                    <div class="content">
+                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-07-17T10:26:38.896Z">2019-07-17</time>
+                        <a href="/2019/07/17/luogu1765/" class="has-link-black-ter is-size-6">洛谷 P1765 手机_NOI导刊2010普及（10）</a>
+                        <div class="level article-meta is-mobile">
+                            <div class="level-left">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        
+            <article class="media">
+                
+                <div class="media-content">
+                    <div class="content">
+                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-07-17T10:06:00.000Z">2019-07-17</time>
+                        <a href="/2019/07/17/lc237/" class="has-link-black-ter is-size-6">LeetCode 237. 删除链表中的节点</a>
+                        <div class="level article-meta is-mobile">
+                            <div class="level-left">
+                                
+                                <div class="level-item is-size-7 is-uppercase">
+                                <a class="has-link-grey -link" href="/categories/题解/">题解</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        
+        </div>
     </div>
 </div>
+
+
 </div>
                 
 
