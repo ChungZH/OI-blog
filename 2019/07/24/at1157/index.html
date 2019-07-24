@@ -2,23 +2,24 @@
 <html lang="zh">
 <head><meta name="generator" content="Hexo 3.8.0">
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-<title>洛谷 P1443 马的遍历 - ChungZH&#39;s OI Blog</title>
+<title>AT1157 2015 - ChungZH&#39;s OI Blog</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta name="description" content="题目链接题解">
+    <meta name="description" content="题目链接https://www.luogu.org/problemnew/show/AT1157">
+<meta name="keywords" content="回文判断">
 <meta property="og:type" content="article">
-<meta property="og:title" content="洛谷 P1443 马的遍历">
-<meta property="og:url" content="http://yoursite.com/2019/07/19/luogu1443/index.html">
+<meta property="og:title" content="AT1157 2015">
+<meta property="og:url" content="http://yoursite.com/2019/07/24/at1157/index.html">
 <meta property="og:site_name" content="ChungZH&#39;s OI Blog">
-<meta property="og:description" content="题目链接题解">
+<meta property="og:description" content="题目链接https://www.luogu.org/problemnew/show/AT1157">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
-<meta property="og:updated_time" content="2019-07-19T09:19:05.456Z">
+<meta property="og:updated_time" content="2019-07-24T10:30:36.546Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="洛谷 P1443 马的遍历">
-<meta name="twitter:description" content="题目链接题解">
+<meta name="twitter:title" content="AT1157 2015">
+<meta name="twitter:description" content="题目链接https://www.luogu.org/problemnew/show/AT1157">
 <meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
 
 
@@ -151,13 +152,17 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-07-19T09:19:05.456Z">2019-07-19</time>
+                <time class="level-item has-text-grey" datetime="2019-07-24T10:24:00.000Z">2019-07-24</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/题解/">题解</a>
+                </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    几秒 读完 (大约 6 个字)
+                    1 分钟 读完 (大约 165 个字)
                 </span>
                 
                 
@@ -166,11 +171,26 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                洛谷 P1443 马的遍历
+                AT1157 2015
             
         </h1>
         <div class="content">
-            <h2 id="题目链接"><a href="#题目链接" class="headerlink" title="题目链接"></a>题目链接</h2><h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2>
+            <h1 id="题目链接"><a href="#题目链接" class="headerlink" title="题目链接"></a>题目链接</h1><p><a href="https://www.luogu.org/problemnew/show/AT1157" target="_blank" rel="noopener">https://www.luogu.org/problemnew/show/AT1157</a></p>
+<a id="more"></a>
+
+<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><p>这题还是比较简单的，考的就是 <strong>把十进制数字转成二进制数字</strong> 以及 <strong>判断数字是否回文</strong>。</p>
+<p>判断回文最简单的方法就是：把一个字符串翻转后，判断是否还等于原字符串。如果等于，就是回文。不等于就不是回文。</p>
+<p>核心代码如下：</p>
+<figure class="highlight cpp hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// a 和 b 都是字符串，N 是输入的数</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">while</span> (N)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="hljs-keyword">if</span> (N % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>)</span><br><span class="line">        a += <span class="hljs-string">'0'</span>;</span><br><span class="line">    <span class="hljs-keyword">else</span></span><br><span class="line">        a += <span class="hljs-string">'1'</span>;</span><br><span class="line"></span><br><span class="line">    N /= <span class="hljs-number">2</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">b = a;</span><br><span class="line">reverse(b.begin(), b.end());</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">// 接下来判断两个字符串是否相等，然后输出即可</span></span><br></pre></td></tr></table></figure>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/回文判断/">回文判断</a>
+                </div>
+            </div>
         </div>
         
         
@@ -185,10 +205,17 @@
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
         
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/07/24/luogu1765/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">洛谷 P1765 手机_NOI导刊2010普及（10）</span>
+            </a>
+        </div>
+        
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2019/07/19/luogu1464/">
-                <span class="level-item">洛谷 P1464 Function</span>
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/07/20/luogu1387/">
+                <span class="level-item">洛谷 P1387 最大正方形</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
@@ -247,7 +274,7 @@
                         文章
                     </p>
                     <p class="title has-text-weight-normal">
-                        21
+                        23
                     </p>
                 </div>
             </div>
@@ -267,7 +294,7 @@
                         标签
                     </p>
                     <p class="title has-text-weight-normal">
-                        16
+                        18
                     </p>
                 </div>
             </div>
@@ -354,7 +381,7 @@
                 <span class="level-item">题解</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">15</span>
+                <span class="level-item tag">17</span>
             </span>
         </a></li>
             </ul>
@@ -368,7 +395,7 @@
         <h3 class="menu-label">
             标签云
         </h3>
-        <a href="/tags/DFS/" style="font-size: 16.67px;">DFS</a> <a href="/tags/NHOI/" style="font-size: 10px;">NHOI</a> <a href="/tags/前缀和/" style="font-size: 10px;">前缀和</a> <a href="/tags/动态规划/" style="font-size: 10px;">动态规划</a> <a href="/tags/周期/" style="font-size: 10px;">周期</a> <a href="/tags/字符串/" style="font-size: 10px;">字符串</a> <a href="/tags/找规律/" style="font-size: 13.33px;">找规律</a> <a href="/tags/搜索/" style="font-size: 10px;">搜索</a> <a href="/tags/桶排序思想/" style="font-size: 10px;">桶排序思想</a> <a href="/tags/模拟/" style="font-size: 20px;">模拟</a> <a href="/tags/游记/" style="font-size: 10px;">游记</a> <a href="/tags/贪心/" style="font-size: 10px;">贪心</a> <a href="/tags/连通块/" style="font-size: 10px;">连通块</a> <a href="/tags/递推/" style="font-size: 10px;">递推</a> <a href="/tags/链表/" style="font-size: 10px;">链表</a> <a href="/tags/队列/" style="font-size: 10px;">队列</a>
+        <a href="/tags/DFS/" style="font-size: 16.67px;">DFS</a> <a href="/tags/NHOI/" style="font-size: 10px;">NHOI</a> <a href="/tags/二维前缀和/" style="font-size: 10px;">二维前缀和</a> <a href="/tags/前缀和/" style="font-size: 10px;">前缀和</a> <a href="/tags/动态规划/" style="font-size: 10px;">动态规划</a> <a href="/tags/周期/" style="font-size: 10px;">周期</a> <a href="/tags/回文判断/" style="font-size: 10px;">回文判断</a> <a href="/tags/字符串/" style="font-size: 10px;">字符串</a> <a href="/tags/找规律/" style="font-size: 13.33px;">找规律</a> <a href="/tags/搜索/" style="font-size: 10px;">搜索</a> <a href="/tags/桶排序思想/" style="font-size: 10px;">桶排序思想</a> <a href="/tags/模拟/" style="font-size: 20px;">模拟</a> <a href="/tags/游记/" style="font-size: 10px;">游记</a> <a href="/tags/贪心/" style="font-size: 10px;">贪心</a> <a href="/tags/连通块/" style="font-size: 10px;">连通块</a> <a href="/tags/递推/" style="font-size: 10px;">递推</a> <a href="/tags/链表/" style="font-size: 10px;">链表</a> <a href="/tags/队列/" style="font-size: 10px;">队列</a>
     </div>
 </div>
 
@@ -387,8 +414,8 @@
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-19T09:19:05.456Z">2019-07-19</time></div>
-                    <a href="/2019/07/19/luogu1443/" class="has-link-black-ter is-size-6">洛谷 P1443 马的遍历</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-24T10:30:36.546Z">2019-07-24</time></div>
+                    <a href="/2019/07/24/luogu1443/" class="has-link-black-ter is-size-6">洛谷 P1443 马的遍历</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -400,8 +427,8 @@
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-19T09:19:05.456Z">2019-07-19</time></div>
-                    <a href="/2019/07/19/luogu1464/" class="has-link-black-ter is-size-6">洛谷 P1464 Function</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-24T10:30:36.546Z">2019-07-24</time></div>
+                    <a href="/2019/07/24/luogu1464/" class="has-link-black-ter is-size-6">洛谷 P1464 Function</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -413,8 +440,8 @@
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-19T09:19:05.456Z">2019-07-19</time></div>
-                    <a href="/2019/07/19/luogu1765/" class="has-link-black-ter is-size-6">洛谷 P1765 手机_NOI导刊2010普及（10）</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-24T10:30:36.546Z">2019-07-24</time></div>
+                    <a href="/2019/07/24/luogu1765/" class="has-link-black-ter is-size-6">洛谷 P1765 手机_NOI导刊2010普及（10）</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -426,8 +453,8 @@
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-19T08:59:00.000Z">2019-07-19</time></div>
-                    <a href="/2019/07/19/lc292/" class="has-link-black-ter is-size-6">LeetCode 292. Nim 游戏</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-24T10:24:00.000Z">2019-07-24</time></div>
+                    <a href="/2019/07/24/at1157/" class="has-link-black-ter is-size-6">AT1157 2015</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/题解/">题解</a>
                     </p>
@@ -439,8 +466,8 @@
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-17T10:06:00.000Z">2019-07-17</time></div>
-                    <a href="/2019/07/17/lc237/" class="has-link-black-ter is-size-6">LeetCode 237. 删除链表中的节点</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-20T08:01:00.000Z">2019-07-20</time></div>
+                    <a href="/2019/07/20/luogu1387/" class="has-link-black-ter is-size-6">洛谷 P1387 最大正方形</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/题解/">题解</a>
                     </p>
@@ -466,7 +493,7 @@
                     <span class="level-item">七月 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">5</span>
+                    <span class="level-item tag">7</span>
                 </span>
             </a>
         </li>
@@ -521,6 +548,13 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/二维前缀和/">
+                        <span class="tag">二维前缀和</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/前缀和/">
                         <span class="tag">前缀和</span>
                         <span class="tag is-grey">1</span>
@@ -537,6 +571,13 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/周期/">
                         <span class="tag">周期</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/回文判断/">
+                        <span class="tag">回文判断</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -645,8 +686,8 @@
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-19T09:19:05.456Z">2019-07-19</time></div>
-                    <a href="/2019/07/19/luogu1443/" class="has-link-black-ter is-size-6">洛谷 P1443 马的遍历</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-24T10:30:36.546Z">2019-07-24</time></div>
+                    <a href="/2019/07/24/luogu1443/" class="has-link-black-ter is-size-6">洛谷 P1443 马的遍历</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -658,8 +699,8 @@
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-19T09:19:05.456Z">2019-07-19</time></div>
-                    <a href="/2019/07/19/luogu1464/" class="has-link-black-ter is-size-6">洛谷 P1464 Function</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-24T10:30:36.546Z">2019-07-24</time></div>
+                    <a href="/2019/07/24/luogu1464/" class="has-link-black-ter is-size-6">洛谷 P1464 Function</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -671,8 +712,8 @@
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-19T09:19:05.456Z">2019-07-19</time></div>
-                    <a href="/2019/07/19/luogu1765/" class="has-link-black-ter is-size-6">洛谷 P1765 手机_NOI导刊2010普及（10）</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-24T10:30:36.546Z">2019-07-24</time></div>
+                    <a href="/2019/07/24/luogu1765/" class="has-link-black-ter is-size-6">洛谷 P1765 手机_NOI导刊2010普及（10）</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -684,8 +725,8 @@
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-19T08:59:00.000Z">2019-07-19</time></div>
-                    <a href="/2019/07/19/lc292/" class="has-link-black-ter is-size-6">LeetCode 292. Nim 游戏</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-24T10:24:00.000Z">2019-07-24</time></div>
+                    <a href="/2019/07/24/at1157/" class="has-link-black-ter is-size-6">AT1157 2015</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/题解/">题解</a>
                     </p>
@@ -697,8 +738,8 @@
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-17T10:06:00.000Z">2019-07-17</time></div>
-                    <a href="/2019/07/17/lc237/" class="has-link-black-ter is-size-6">LeetCode 237. 删除链表中的节点</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-20T08:01:00.000Z">2019-07-20</time></div>
+                    <a href="/2019/07/20/luogu1387/" class="has-link-black-ter is-size-6">洛谷 P1387 最大正方形</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/题解/">题解</a>
                     </p>
@@ -724,7 +765,7 @@
                     <span class="level-item">七月 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">5</span>
+                    <span class="level-item tag">7</span>
                 </span>
             </a>
         </li>
@@ -779,6 +820,13 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/二维前缀和/">
+                        <span class="tag">二维前缀和</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/前缀和/">
                         <span class="tag">前缀和</span>
                         <span class="tag is-grey">1</span>
@@ -795,6 +843,13 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/周期/">
                         <span class="tag">周期</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/回文判断/">
+                        <span class="tag">回文判断</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
