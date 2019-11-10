@@ -2,23 +2,24 @@
 <html lang="zh">
 <head><meta name="generator" content="Hexo 3.8.0">
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-<title>洛谷 P1443 马的遍历 - ChungZH&#39;s OI Blog</title>
+<title>2019~2020 创新班递推学习笔记 - ChungZH&#39;s OI Blog</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta name="description" content="题目链接题解">
+    <meta name="description" content="呼~今年的创新班开得格外迟，都已经开学第十周了。 不过比起之前，今年的创新班倒是水平高多了，和初中生一个班呢！  递推的学习是 2019/11/02 -&amp;gt; 2019/11/09，两节课。当然有可能未完待续">
+<meta name="keywords" content="递推,创新班">
 <meta property="og:type" content="article">
-<meta property="og:title" content="洛谷 P1443 马的遍历">
-<meta property="og:url" content="http://yoursite.com/2019/07/24/luogu1443/index.html">
+<meta property="og:title" content="2019~2020 创新班递推学习笔记">
+<meta property="og:url" content="http://yoursite.com/2019/11/10/cxb-19-20-dt-note/index.html">
 <meta property="og:site_name" content="ChungZH&#39;s OI Blog">
-<meta property="og:description" content="题目链接题解">
+<meta property="og:description" content="呼~今年的创新班开得格外迟，都已经开学第十周了。 不过比起之前，今年的创新班倒是水平高多了，和初中生一个班呢！  递推的学习是 2019/11/02 -&amp;gt; 2019/11/09，两节课。当然有可能未完待续">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
-<meta property="og:updated_time" content="2019-07-24T10:30:36.546Z">
+<meta property="og:updated_time" content="2019-11-10T06:55:11.348Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="洛谷 P1443 马的遍历">
-<meta name="twitter:description" content="题目链接题解">
+<meta name="twitter:title" content="2019~2020 创新班递推学习笔记">
+<meta name="twitter:description" content="呼~今年的创新班开得格外迟，都已经开学第十周了。 不过比起之前，今年的创新班倒是水平高多了，和初中生一个班呢！  递推的学习是 2019/11/02 -&amp;gt; 2019/11/09，两节课。当然有可能未完待续">
 <meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
 
 
@@ -151,13 +152,17 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-07-24T10:30:36.546Z">2019-07-24</time>
+                <time class="level-item has-text-grey" datetime="2019-11-10T04:07:00.000Z">2019-11-10</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/笔记/">笔记</a>
+                </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    几秒 读完 (大约 6 个字)
+                    7 分钟 读完 (大约 1083 个字)
                 </span>
                 
                 
@@ -166,11 +171,56 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                洛谷 P1443 马的遍历
+                2019~2020 创新班递推学习笔记
             
         </h1>
         <div class="content">
-            <h2 id="题目链接"><a href="#题目链接" class="headerlink" title="题目链接"></a>题目链接</h2><h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2>
+            <blockquote>
+<p>呼~今年的创新班开得格外迟，都已经开学第十周了。</p>
+<p>不过比起之前，今年的创新班倒是水平高多了，和初中生一个班呢！</p>
+</blockquote>
+<p>递推的学习是 2019/11/02 -&gt; 2019/11/09，两节课。<del>当然有可能未完待续</del></p>
+<a id="more"></a>
+
+<h2 id="The-First-Lesson"><a href="#The-First-Lesson" class="headerlink" title="The First Lesson"></a>The First Lesson</h2><p>首先讲了一下加法原理和乘法原理，<del>一知半解</del>。</p>
+<p>然后讲了一下上楼梯和骨牌这两个例题，小测了一下。。</p>
+<p>还有一个 pdf：<a href="/pdf/递推.pdf">递推.pdf</a></p>
+<h2 id="The-Second-Lesson"><a href="#The-Second-Lesson" class="headerlink" title="The Second Lesson"></a>The Second Lesson</h2><p>上 SMOJ 测试咯啦啦啦</p>
+<h3 id="T1"><a href="#T1" class="headerlink" title="T1:"></a>T1:</h3><p><strong>题目描述</strong>：给你 n 个钱币，去一个不找钱的商场买东西，你可以买多少种价格的物品？</p>
+<p><strong>输入格式</strong>：第一行：一个整数n，范围在[0, 100]。第二行：n个整数，每个数范围在[1, 100]</p>
+<p><strong>输出格式</strong>：可能买的不同价格数。(包括价格 0)</p>
+<p><code>f[i][j]</code> 表示用前i枚硬币是否能能够凑出 $j$ 元<br><code>f[i][j] = true</code> 至少要满足以下两个条件之一（分类讨论）：</p>
+<ol>
+<li>不用第 $i$ 枚硬币，则要满足 <code>f[i-1][j] = true</code></li>
+<li>用第 $i$ 枚硬币，则要满足 <code>f[i-1][j-a[i]] = true, j &gt;= a[i]</code></li>
+</ol>
+<p>图示：</p>
+<p><img src="https://raw.githubusercontent.com/ChungZH/picgo-upload/master/dt-t1-smoj-1918.png" alt></p>
+<figure class="highlight cpp hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// [SMOJ 1918] </span></span><br><span class="line"><span class="hljs-comment">// 2019/11/02 -&gt; 2019/11/09 创新班 </span></span><br><span class="line"><span class="hljs-comment">// 递推 第一题 </span></span><br><span class="line"><span class="hljs-comment">// 给你 n 个钱币，去一个不找钱的商场买东西，你可以买多少种价格的物品？ </span></span><br><span class="line"> </span><br><span class="line"><span class="hljs-comment">/*</span></span><br><span class="line"><span class="hljs-comment">f[i][j] 表示用前i枚硬币是否能能够凑出 j 元</span></span><br><span class="line"><span class="hljs-comment">f[i][j] = true 至少要满足以下两个条件之一： </span></span><br><span class="line"><span class="hljs-comment">1. 不用第 i 枚硬币，则要满足 f[i-1][j] = true</span></span><br><span class="line"><span class="hljs-comment">2. 用第 i 枚硬币，则要满足 f[i-1][j-a[i]] = true, j &gt;= a[i] </span></span><br><span class="line"><span class="hljs-comment">*/</span> </span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;</span><br><span class="line"><span class="hljs-keyword">int</span> ans = <span class="hljs-number">1</span>;</span><br><span class="line"><span class="hljs-keyword">bool</span> f[<span class="hljs-number">10003</span>][<span class="hljs-number">10003</span>];</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	freopen(<span class="hljs-string">"1918.in"</span>, <span class="hljs-string">"r"</span>, <span class="hljs-built_in">stdin</span>);</span><br><span class="line">	freopen(<span class="hljs-string">"1918.out"</span>, <span class="hljs-string">"w"</span>, <span class="hljs-built_in">stdout</span>);</span><br><span class="line">	<span class="hljs-keyword">int</span> n;</span><br><span class="line">	<span class="hljs-built_in">cin</span> &gt;&gt; n;</span><br><span class="line">	</span><br><span class="line">	<span class="hljs-keyword">int</span> a[n+<span class="hljs-number">3</span>];</span><br><span class="line">	<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= n; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="hljs-built_in">cin</span> &gt;&gt; a[i];</span><br><span class="line">	&#125; </span><br><span class="line">	</span><br><span class="line">	f[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>] = <span class="hljs-literal">true</span>;</span><br><span class="line">	</span><br><span class="line">	<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= n; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		f[i][<span class="hljs-number">0</span>] = <span class="hljs-literal">true</span>;</span><br><span class="line">		<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = <span class="hljs-number">1</span>; j &lt;= <span class="hljs-number">10000</span>; j++)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="hljs-keyword">if</span> (f[i<span class="hljs-number">-1</span>][j] == <span class="hljs-literal">true</span>)</span><br><span class="line">			&#123;</span><br><span class="line">				f[i][j] = <span class="hljs-literal">true</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="hljs-keyword">if</span> (j &gt;= a[i] &amp;&amp; f[i<span class="hljs-number">-1</span>][j-a[i]] == <span class="hljs-literal">true</span>)</span><br><span class="line">			&#123;</span><br><span class="line">				f[i][j] = <span class="hljs-literal">true</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="hljs-keyword">int</span> ans = <span class="hljs-number">0</span>;</span><br><span class="line">	<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt;= <span class="hljs-number">10000</span>; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="hljs-keyword">if</span> (f[n][i] == <span class="hljs-literal">true</span>) ans++;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="hljs-built_in">cout</span> &lt;&lt; ans &lt;&lt; <span class="hljs-built_in">endl</span>;</span><br><span class="line">	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="T2："><a href="#T2：" class="headerlink" title="T2："></a>T2：</h3><p><strong>题目描述</strong>：给你n个正整数，每个数可选或不选，问可以选一些数它们的和可以生成多少100以内的不同数？</p>
+<p><strong>输入格式</strong>：第一行：一个整数n，范围在[0, 100000]。第二行：n个整数，每个数范围在[1, 10000]</p>
+<p><strong>输出格式</strong>： 可生成数。(包括0和100)</p>
+<p>和上一题基本上是一样的，只不过要求 100 以内而已。</p>
+<figure class="highlight cpp hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// [SMOJ 1919] </span></span><br><span class="line"><span class="hljs-comment">// 2019/11/02 -&gt; 2019/11/09 创新班 </span></span><br><span class="line"><span class="hljs-comment">// 递推 第二题 </span></span><br><span class="line"><span class="hljs-comment">// 给你n个正整数，每个数可选或不选，问可以选一些数它们的和可以生成多少100以内的不同数？ </span></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">/*</span></span><br><span class="line"><span class="hljs-comment">和上一题基本一样，只是 100 以内。</span></span><br><span class="line"><span class="hljs-comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;</span><br><span class="line"><span class="hljs-keyword">int</span> ans = <span class="hljs-number">1</span>;</span><br><span class="line"><span class="hljs-keyword">bool</span> f[<span class="hljs-number">100003</span>][<span class="hljs-number">103</span>];</span><br><span class="line"><span class="hljs-keyword">int</span> a[<span class="hljs-number">100003</span>];</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	freopen(<span class="hljs-string">"1919.in"</span>, <span class="hljs-string">"r"</span>, <span class="hljs-built_in">stdin</span>);</span><br><span class="line">	freopen(<span class="hljs-string">"1919.out"</span>, <span class="hljs-string">"w"</span>, <span class="hljs-built_in">stdout</span>);</span><br><span class="line">	<span class="hljs-keyword">int</span> n;</span><br><span class="line">	<span class="hljs-built_in">cin</span> &gt;&gt; n;</span><br><span class="line">	<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= n; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="hljs-keyword">int</span> t;</span><br><span class="line">		<span class="hljs-built_in">cin</span> &gt;&gt; t;</span><br><span class="line">		</span><br><span class="line">		<span class="hljs-keyword">if</span> (t &lt;= <span class="hljs-number">100</span>)     <span class="hljs-comment">// 大于 100 就不要了</span></span><br><span class="line">			a[i] = t;</span><br><span class="line">	&#125; </span><br><span class="line">	f[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>] = <span class="hljs-literal">true</span>;</span><br><span class="line">	<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= n; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		f[i][<span class="hljs-number">0</span>] = <span class="hljs-literal">true</span>;</span><br><span class="line">		<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = <span class="hljs-number">1</span>; j &lt;= <span class="hljs-number">100</span>; j++)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="hljs-keyword">if</span> (f[i<span class="hljs-number">-1</span>][j] == <span class="hljs-literal">true</span>)</span><br><span class="line">			&#123;</span><br><span class="line">				f[i][j] = <span class="hljs-literal">true</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="hljs-keyword">if</span> (j &gt;= a[i] &amp;&amp; f[i<span class="hljs-number">-1</span>][j-a[i]] == <span class="hljs-literal">true</span>)</span><br><span class="line">			&#123;</span><br><span class="line">				f[i][j] = <span class="hljs-literal">true</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="hljs-keyword">int</span> ans = <span class="hljs-number">0</span>;</span><br><span class="line">	<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt;= <span class="hljs-number">100</span>; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="hljs-keyword">if</span> (f[n][i] == <span class="hljs-literal">true</span>) ans++;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="hljs-built_in">cout</span> &lt;&lt; ans &lt;&lt; <span class="hljs-built_in">endl</span>;</span><br><span class="line">	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="T3："><a href="#T3：" class="headerlink" title="T3："></a>T3：</h3><p><strong>题目描述</strong>：给你n个正整数，每个数可选或不选，要求选一些数，使它们的和为100，问有多少种方案？</p>
+<p><strong>输入格式</strong>： 第一行：一个整数n，范围在[1, 100000]。第二行：n个整数，每个数范围在[1, 10000]</p>
+<p><strong>输出格式</strong>： 方案数。（答案不超过2^63）</p>
+<p><img src="https://raw.githubusercontent.com/ChungZH/picgo-upload/master/dt-t3-smoj-1920.png" alt></p>
+<p>还是在上一题的基础上改一改。</p>
+<figure class="highlight cpp hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// [SMOJ 1920] </span></span><br><span class="line"><span class="hljs-comment">// 2019/11/02 -&gt; 2019/11/09 创新班 </span></span><br><span class="line"><span class="hljs-comment">// 递推 第三题 </span></span><br><span class="line"><span class="hljs-comment">// 给你n个正整数，每个数可选或不选，要求选一些数，使它们的和为100，问有多少种方案？ </span></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">/*</span></span><br><span class="line"><span class="hljs-comment">在上一题的基础上修改</span></span><br><span class="line"><span class="hljs-comment">*/</span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">int</span> n, a[<span class="hljs-number">100005</span>], useful;</span><br><span class="line"><span class="hljs-keyword">long</span> <span class="hljs-keyword">long</span> f[<span class="hljs-number">100005</span>][<span class="hljs-number">105</span>];</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    freopen(<span class="hljs-string">"1920.in"</span>, <span class="hljs-string">"r"</span>, <span class="hljs-built_in">stdin</span>);</span><br><span class="line">    freopen(<span class="hljs-string">"1920.out"</span>, <span class="hljs-string">"w"</span>, <span class="hljs-built_in">stdout</span>);</span><br><span class="line">    <span class="hljs-built_in">cin</span> &gt;&gt; n;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i&lt;= n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="hljs-keyword">int</span> x;</span><br><span class="line">        <span class="hljs-built_in">cin</span> &gt;&gt; x;</span><br><span class="line">        <span class="hljs-keyword">if</span> (x &lt;= <span class="hljs-number">100</span>) a[++useful] = x;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    f[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>] = <span class="hljs-number">1</span>;</span><br><span class="line">    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= useful; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        f[i][<span class="hljs-number">0</span>] = <span class="hljs-number">1</span>;</span><br><span class="line">        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = <span class="hljs-number">1</span>; j &lt;= <span class="hljs-number">100</span>; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            f[i][j] = f[i<span class="hljs-number">-1</span>][j];</span><br><span class="line">            <span class="hljs-keyword">if</span> (j &gt;= a[i]) f[i][j] += f[i<span class="hljs-number">-1</span>][j-a[i]];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-built_in">cout</span> &lt;&lt; f[useful][<span class="hljs-number">100</span>] &lt;&lt; <span class="hljs-built_in">endl</span>;</span><br><span class="line">    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/创新班/">创新班</a>, <a class="has-link-grey -link" href="/tags/递推/">递推</a>
+                </div>
+            </div>
         </div>
         
         
@@ -187,8 +237,8 @@
         
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2019/07/24/luogu1464/">
-                <span class="level-item">洛谷 P1464 Function</span>
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/07/24/at1157/">
+                <span class="level-item">AT1157 2015</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
@@ -247,7 +297,7 @@
                         文章
                     </p>
                     <p class="title has-text-weight-normal">
-                        23
+                        20
                     </p>
                 </div>
             </div>
@@ -257,7 +307,7 @@
                         分类
                     </p>
                     <p class="title has-text-weight-normal">
-                        2
+                        3
                     </p>
                 </div>
             </div>
@@ -267,7 +317,7 @@
                         标签
                     </p>
                     <p class="title has-text-weight-normal">
-                        18
+                        19
                     </p>
                 </div>
             </div>
@@ -349,6 +399,14 @@
                 <span class="level-item tag">1</span>
             </span>
         </a></li><li>
+        <a class="level is-marginless" href="/categories/笔记/">
+            <span class="level-start">
+                <span class="level-item">笔记</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
         <a class="level is-marginless" href="/categories/题解/">
             <span class="level-start">
                 <span class="level-item">题解</span>
@@ -368,7 +426,7 @@
         <h3 class="menu-label">
             标签云
         </h3>
-        <a href="/tags/DFS/" style="font-size: 16.67px;">DFS</a> <a href="/tags/NHOI/" style="font-size: 10px;">NHOI</a> <a href="/tags/二维前缀和/" style="font-size: 10px;">二维前缀和</a> <a href="/tags/前缀和/" style="font-size: 10px;">前缀和</a> <a href="/tags/动态规划/" style="font-size: 10px;">动态规划</a> <a href="/tags/周期/" style="font-size: 10px;">周期</a> <a href="/tags/回文判断/" style="font-size: 10px;">回文判断</a> <a href="/tags/字符串/" style="font-size: 10px;">字符串</a> <a href="/tags/找规律/" style="font-size: 13.33px;">找规律</a> <a href="/tags/搜索/" style="font-size: 10px;">搜索</a> <a href="/tags/桶排序思想/" style="font-size: 10px;">桶排序思想</a> <a href="/tags/模拟/" style="font-size: 20px;">模拟</a> <a href="/tags/游记/" style="font-size: 10px;">游记</a> <a href="/tags/贪心/" style="font-size: 10px;">贪心</a> <a href="/tags/连通块/" style="font-size: 10px;">连通块</a> <a href="/tags/递推/" style="font-size: 10px;">递推</a> <a href="/tags/链表/" style="font-size: 10px;">链表</a> <a href="/tags/队列/" style="font-size: 10px;">队列</a>
+        <a href="/tags/DFS/" style="font-size: 16.67px;">DFS</a> <a href="/tags/NHOI/" style="font-size: 10px;">NHOI</a> <a href="/tags/二维前缀和/" style="font-size: 10px;">二维前缀和</a> <a href="/tags/创新班/" style="font-size: 10px;">创新班</a> <a href="/tags/前缀和/" style="font-size: 10px;">前缀和</a> <a href="/tags/动态规划/" style="font-size: 10px;">动态规划</a> <a href="/tags/周期/" style="font-size: 10px;">周期</a> <a href="/tags/回文判断/" style="font-size: 10px;">回文判断</a> <a href="/tags/字符串/" style="font-size: 10px;">字符串</a> <a href="/tags/找规律/" style="font-size: 13.33px;">找规律</a> <a href="/tags/搜索/" style="font-size: 10px;">搜索</a> <a href="/tags/桶排序思想/" style="font-size: 10px;">桶排序思想</a> <a href="/tags/模拟/" style="font-size: 20px;">模拟</a> <a href="/tags/游记/" style="font-size: 10px;">游记</a> <a href="/tags/贪心/" style="font-size: 10px;">贪心</a> <a href="/tags/连通块/" style="font-size: 10px;">连通块</a> <a href="/tags/递推/" style="font-size: 13.33px;">递推</a> <a href="/tags/链表/" style="font-size: 10px;">链表</a> <a href="/tags/队列/" style="font-size: 10px;">队列</a>
     </div>
 </div>
 
@@ -387,36 +445,10 @@
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-24T10:30:36.546Z">2019-07-24</time></div>
-                    <a href="/2019/07/24/luogu1443/" class="has-link-black-ter is-size-6">洛谷 P1443 马的遍历</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-10T04:07:00.000Z">2019-11-10</time></div>
+                    <a href="/2019/11/10/cxb-19-20-dt-note/" class="has-link-black-ter is-size-6">2019~2020 创新班递推学习笔记</a>
                     <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-24T10:30:36.546Z">2019-07-24</time></div>
-                    <a href="/2019/07/24/luogu1464/" class="has-link-black-ter is-size-6">洛谷 P1464 Function</a>
-                    <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-24T10:30:36.546Z">2019-07-24</time></div>
-                    <a href="/2019/07/24/luogu1765/" class="has-link-black-ter is-size-6">洛谷 P1765 手机_NOI导刊2010普及（10）</a>
-                    <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/笔记/">笔记</a>
                     </p>
                 </div>
             </div>
@@ -448,6 +480,32 @@
             </div>
         </article>
         
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-19T08:59:00.000Z">2019-07-19</time></div>
+                    <a href="/2019/07/19/lc292/" class="has-link-black-ter is-size-6">LeetCode 292. Nim 游戏</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/题解/">题解</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-17T10:06:00.000Z">2019-07-17</time></div>
+                    <a href="/2019/07/17/lc237/" class="has-link-black-ter is-size-6">LeetCode 237. 删除链表中的节点</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/题解/">题解</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
     </div>
 </div>
 
@@ -461,12 +519,23 @@
         <ul class="menu-list">
         
         <li>
+            <a class="level is-marginless" href="/archives/2019/11/">
+                <span class="level-start">
+                    <span class="level-item">十一月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
             <a class="level is-marginless" href="/archives/2019/07/">
                 <span class="level-start">
                     <span class="level-item">七月 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">7</span>
+                    <span class="level-item tag">4</span>
                 </span>
             </a>
         </li>
@@ -477,7 +546,7 @@
                     <span class="level-item">六月 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">9</span>
+                    <span class="level-item tag">8</span>
                 </span>
             </a>
         </li>
@@ -523,6 +592,13 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/二维前缀和/">
                         <span class="tag">二维前缀和</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/创新班/">
+                        <span class="tag">创新班</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -614,7 +690,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/递推/">
                         <span class="tag">递推</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
@@ -659,36 +735,10 @@
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-24T10:30:36.546Z">2019-07-24</time></div>
-                    <a href="/2019/07/24/luogu1443/" class="has-link-black-ter is-size-6">洛谷 P1443 马的遍历</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-10T04:07:00.000Z">2019-11-10</time></div>
+                    <a href="/2019/11/10/cxb-19-20-dt-note/" class="has-link-black-ter is-size-6">2019~2020 创新班递推学习笔记</a>
                     <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-24T10:30:36.546Z">2019-07-24</time></div>
-                    <a href="/2019/07/24/luogu1464/" class="has-link-black-ter is-size-6">洛谷 P1464 Function</a>
-                    <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-24T10:30:36.546Z">2019-07-24</time></div>
-                    <a href="/2019/07/24/luogu1765/" class="has-link-black-ter is-size-6">洛谷 P1765 手机_NOI导刊2010普及（10）</a>
-                    <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/笔记/">笔记</a>
                     </p>
                 </div>
             </div>
@@ -720,6 +770,32 @@
             </div>
         </article>
         
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-19T08:59:00.000Z">2019-07-19</time></div>
+                    <a href="/2019/07/19/lc292/" class="has-link-black-ter is-size-6">LeetCode 292. Nim 游戏</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/题解/">题解</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-17T10:06:00.000Z">2019-07-17</time></div>
+                    <a href="/2019/07/17/lc237/" class="has-link-black-ter is-size-6">LeetCode 237. 删除链表中的节点</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/题解/">题解</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
     </div>
 </div>
 
@@ -733,12 +809,23 @@
         <ul class="menu-list">
         
         <li>
+            <a class="level is-marginless" href="/archives/2019/11/">
+                <span class="level-start">
+                    <span class="level-item">十一月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
             <a class="level is-marginless" href="/archives/2019/07/">
                 <span class="level-start">
                     <span class="level-item">七月 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">7</span>
+                    <span class="level-item tag">4</span>
                 </span>
             </a>
         </li>
@@ -749,7 +836,7 @@
                     <span class="level-item">六月 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">9</span>
+                    <span class="level-item tag">8</span>
                 </span>
             </a>
         </li>
@@ -795,6 +882,13 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/二维前缀和/">
                         <span class="tag">二维前缀和</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/创新班/">
+                        <span class="tag">创新班</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -886,7 +980,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/递推/">
                         <span class="tag">递推</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
